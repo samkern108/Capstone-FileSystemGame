@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class Parser {
 	
+	public static Parser self;
 	public enum commands {cd, ls};
 	Scanner in;
 	
 	public Parser()
 	{
+		self = this;
 		in = new Scanner(System.in);
 	}
 
@@ -32,5 +34,22 @@ public class Parser {
 			explorer.cat(inputAr.length == 1 ? null : inputAr[1]);
 			break;
 		}
+	}
+
+	public boolean askForPassword(String name, String password, String hint) {
+		System.out.print("Enter Password for " + name + ":  ");
+		String passInput = in.nextLine();
+		
+		if(passInput.equals("hint"))
+		{
+			System.out.println(hint);
+			return askForPassword(name, password, hint);
+		}
+		
+		if(!passInput.equals(password)) {
+			System.out.println("Incorrect password for " + name);
+			return false;
+		}
+		return true;
 	}
 }

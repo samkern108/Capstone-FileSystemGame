@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args)
 	{		
-		FileExplorer explorer = new FileExplorer();
 		Parser parser = new Parser();
+		FileExplorer explorer = new FileExplorer();
 		
 		boolean playing = true;
 		

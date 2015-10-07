@@ -22,10 +22,17 @@ public class FileExplorer {
 		{
 			if(filename.equals(cDir.files.get(i).name))
 			{
+				if(cDir.files.get(i).password != null)
+				{
+					boolean password = Parser.self.askForPassword(filename, cDir.files.get(i).password, cDir.files.get(i).hint);
+					if(!password)
+						return;
+				}
 				System.out.println(cDir.files.get(i).contents);
-				break;
+				return;
 			}
 		}
+		System.out.println("Could not find file " + filename);
 	}
 	
 	public void ls()

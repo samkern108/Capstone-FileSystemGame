@@ -90,6 +90,6 @@ public class FileManager
 	
 	private gamecontrol.File ObjectToFile(JSONObject obj)
 	{
-		return new gamecontrol.File((String)obj.get("name"), (String)obj.get("content"));
+		return new gamecontrol.File((String)obj.get("name"), (String)obj.get("password"), (String)obj.get("hint"), (String)obj.get("content"));
 	}
 }
