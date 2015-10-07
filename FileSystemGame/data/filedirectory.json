@@ -1,0 +1,54 @@
+{
+    "name": "Jake's Hard Drive",
+    "alias": "~",
+    "dirs": [
+        {
+            "name": "Desktop",
+            "dirs": [
+                {
+                    "name": "Woah Super Secret",
+                    "dirs": [],
+                    "files": []
+                }
+            ],
+            "files": []
+        },
+        {
+            "name": "Documents",
+            "dirs": [],
+            "files": [
+                {
+                    "name": "Boring Spreadsheet.xcel",
+                    "content": "I am boring"
+                }
+            ]
+        },
+        {
+            "name": "Downloads",
+            "dirs": [],
+            "files": []
+        },
+        {
+            "name": "Pictures",
+            "dirs": [],
+            "files": [
+                {
+                    "name": "Picture.jpg",
+                    "content": "none"
+                }
+            ]
+        }
+    ],
+    "files": [
+        {
+            "name": "README.txt",
+            "content": "Blah blah file content blah blah blah!  :)"
+        },
+        {
+            "name": "Dear User.txt",
+            "content": "Blah blah good job victory hooray!",
+            "password": "AspenHall",
+            "hint": "I am here literally right now."
+        }
+    ]
+}

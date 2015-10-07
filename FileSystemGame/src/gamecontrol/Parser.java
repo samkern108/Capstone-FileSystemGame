@@ -24,6 +24,9 @@ public class Parser {
 		case "ls":
 			explorer.ls();
 			break;
+		case "pfs":
+			explorer.pfs();
+			break;
 		}
 	}
 }
