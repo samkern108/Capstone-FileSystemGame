@@ -16,6 +16,18 @@ public class FileExplorer {
 		String[] cAr = command.split("\\");		
 	}
 	
+	public void cat(String filename)
+	{
+		for(int i = 0; i < cDir.files.size(); i++)
+		{
+			if(filename.equals(cDir.files.get(i).name))
+			{
+				System.out.println(cDir.files.get(i).contents);
+				break;
+			}
+		}
+	}
+	
 	public void ls()
 	{
 		System.out.printf(cDir.ls()+"\n");

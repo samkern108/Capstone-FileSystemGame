@@ -4,6 +4,7 @@ public class File
 {
 	String name;
 	String contents;
+	String password;
 
 	public File(String name, String contents)
 	{

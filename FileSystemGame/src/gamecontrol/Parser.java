@@ -15,8 +15,9 @@ public class Parser {
 	public void takeUserInput(FileExplorer explorer)
 	{
 		String input = in.nextLine();
-		
-		switch(input)
+		String[] inputAr = input.split(" ", 2);
+
+		switch(inputAr[0])
 		{
 		case "pwd":
 			explorer.pwd();
@@ -26,6 +27,9 @@ public class Parser {
 			break;
 		case "pfs":
 			explorer.pfs();
+			break;
+		case "cat":
+			explorer.cat(inputAr.length == 1 ? null : inputAr[1]);
 			break;
 		}
 	}
