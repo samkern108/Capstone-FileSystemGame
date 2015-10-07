@@ -1,7 +1,6 @@
 package gamecontrol;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class FileExplorer {
 	
@@ -16,6 +15,7 @@ public class FileExplorer {
 		public Directory(String name, Directory p)
 		{
 			this.name = name;
+			this.alias = name;
 			directories = new ArrayList<Directory>();
 			files = new ArrayList<File>();
 			parent = p;
@@ -115,6 +115,8 @@ public class FileExplorer {
 			dir.add(BuildPictures(root));
 			dir.add(BuildDownloads(root));
 			ArrayList<File> files = new ArrayList<File>();
+			
+			root.alias = "~";
 			
 			root.AddDirectories(dir);
 			root.AddFiles(files);
