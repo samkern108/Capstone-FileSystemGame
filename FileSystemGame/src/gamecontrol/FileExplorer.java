@@ -8,12 +8,25 @@ public class FileExplorer {
 	{
 		FileManager fileManager = new FileManager();
 		root = fileManager.populateFileSystem();
-		cDir = root;
+		cDir = root; //current directory
 	}
 	
 	public void cd(String command)
 	{
-		String[] cAr = command.split("\\");		
+		String[] cAr = command.split("/");
+		for (String s : cAr){
+			if (s.equals("..")) {
+				if (cDir.parent != null){
+					cDir = cDir.parent;
+				}
+			}
+			for (int i = 0; i < cDir.directories.size(); i++){
+				if (s.equals(cDir.directories.get(i).name)){
+					cDir = cDir.directories.get(i);
+					i = 0;
+				}
+			}
+		}
 	}
 	
 	public void cat(String filename)

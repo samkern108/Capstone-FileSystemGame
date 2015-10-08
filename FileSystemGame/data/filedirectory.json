@@ -25,7 +25,19 @@
         },
         {
             "name": "Downloads",
-            "dirs": [],
+            "dirs": [
+            	{
+            		"name": "Testing",
+           			"dirs": [
+           				{
+            				"name": "Testing2",
+           					"dirs": [],
+            				"files": []
+        				}		
+        			],
+            		"files": []
+        		}
+        	],
             "files": []
         },
         {

@@ -21,6 +21,11 @@ public class Parser {
 
 		switch(inputAr[0])
 		{
+		case "cd":
+			if (inputAr.length == 2){
+				explorer.cd(inputAr[1]);
+			}
+			break;
 		case "pwd":
 			explorer.pwd();
 			break;
