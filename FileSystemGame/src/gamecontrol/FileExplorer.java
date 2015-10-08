@@ -19,13 +19,14 @@ public class FileExplorer {
 				if (cDir.parent != null){
 					cDir = cDir.parent;
 				}
-			}
-			for (int i = 0; i < cDir.directories.size(); i++){
-				if (s.equals(cDir.directories.get(i).name)){
-					cDir = cDir.directories.get(i);
-					i = 0;
+			} else {
+				for (int i = 0; i < cDir.directories.size(); i++){
+					if (s.equals(cDir.directories.get(i).name)){
+						cDir = cDir.directories.get(i);
+						i = 0;
+					}
 				}
-			}
+			}	
 		}
 	}
 	
