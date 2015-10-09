@@ -5,14 +5,20 @@ I've just been so swamped at work with this Jake catastrophe.
 Things are really starting to simmer down, but being a project manager, 
 we're having to reallocate a lot of resources.  
 
-It's weird; someone dies and everything goes insane, but we reshuffle a little 
+It's weird; someone dies and everything goes insane, but we reshuffle 
 and within a week we're back to the same desks, the same schedules, the same company.  
-Pharmatin hasn't changed.  I suppose it takes a lot of force to move such a giant.
+Pharmatin hasn't changed.  
+I suppose it takes a lot of force to move such a giant.
 
 Well, anyway, thanks again for doing this.  
 I was supposed to recover all Pharmatin IP from Jake's computer after he died, 
-but everyone's acting... odd about it.  
-I think there's something worth finding on this computer.  
+but everyone's acting... odd about it.
+
+It's strange; he's deleted most of his files... 
+Pictures, Downloads, Screenshots...
+But some of it's still there.  Why delete Pictures but keep Receipts?
+
+I think there's something worth finding on this computer.
 
 I'm pretending to hold the computer while I search it.  
 You're not technically supposed to have this, and the company doesn't know.  

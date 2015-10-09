@@ -68,7 +68,7 @@ public class FileExplorer {
 				if(catAr[i] == '\n')
 					Thread.sleep(500);
 				else
-					Thread.sleep((int)(80*Math.random()));
+					Thread.sleep((int)(70*Math.random()));
 				System.out.print(""+catAr[i]);
 			}
 		} catch (InterruptedException e) {

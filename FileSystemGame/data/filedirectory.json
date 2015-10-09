@@ -6,16 +6,30 @@
             "name": "Desktop",
             "dirs": [
                 {
-                    "name": "Woah Super Secret",
+                    "name": "Saved Articles",
+                    "dirs": [
+                        {
+                            "name": "Health",
+                            "dirs": [],
+                            "files": []
+                        }
+                    ],
+                    "files": []
+                },
+                {
+                    "name": "Receipts",
                     "dirs": [],
                     "files": []
                 }
             ],
             "files": [
                 {
-                    "name": "Dear Reader.txt",
-                    "password": "endgame",
-                    "hint": "The culmination of all of my work.  This is everything."
+                    "name": "Dear Reader p1.txt"
+                },
+                {
+                    "name": "Dear Reader p2.txt",
+                    "password": "milkshake",
+                    "hint": "If I only could have saved one person, even once..."
                 }
             ]
         },
@@ -25,26 +39,89 @@
                 {
                     "name": "Personal",
                     "dirs": [
+{"name": "Archived Emails",
+"dirs":[],
+"files":[{"name":"Becky 08-23-15.mail", "password":"rabbit hole", "hint":"First word, 6 letters.  Second word, 4 letters.  But just how deep?"}]},
                         {
-                            "name": "Thesis",
-                            "password": "Leanne",
-                            "hint": "Speaking of tumors...",
+                            "name": "Letters From Mom",
                             "dirs": [],
+                            "files": [{"name":"Letter1.txt"},{"name":"Letter2.txt"}]
+                        },
+                        {
+                            "name": "College",
+                            "dirs": [
+                                {
+                                    "name": "Thesis",
+                                    "password": "Leanne",
+                                    "hint": "Speaking of tumors...",
+                                    "dirs": [
+                                        {
+                                            "name": "Research Materials",
+                                            "dirs": [],
+                                            "files": []
+                                        }
+                                    ],
+                                    "files": [
+                                        {
+                                            "name": "Thesis Proposal.txt"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Letters of Rec",
+                                    "dirs": [],
+                                    "files": [
+                                        {
+                                            "name": "Letter from Max.txt"
+                                        },
+                                        {
+                                            "name": "Becky Rec Letter.txt"
+                                        }
+                                    ]
+                                }
+                            ],
                             "files": []
                         }
                     ],
-                    "files": [
-                        {
-                            "name": "Letter from Mom.txt"
-                        }
-                    ]
+                    "files": []
                 },
                 {
                     "name": "Work",
                     "dirs": [
                         {
-                            "name": "Archived Emails",
-                            "dirs": [],
+                            "name": "Chat Logs",
+                            "dirs": [
+                                {
+                                    "name": "Becky",
+                                    "dirs": [],
+                                    "files": [
+                                        {
+                                            "name": "07-13-15.txt"
+                                        },
+                                        {
+                                            "name": "08-02-15.txt"
+                                        },
+                                        {
+                                            "name": "08-22-15.txt"
+                                        },
+                                        {
+                                            "name": "08-23-15.txt",
+                                            "password": "8:45",
+                                            "hint": "I suppose, at a time, I WAS nervous."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Cameron",
+                                    "dirs": [],
+                                    "files": []
+                                },
+                                {
+                                    "name": "Eric",
+                                    "dirs": [],
+                                    "files": []
+                                }
+                            ],
                             "files": []
                         }
                     ],

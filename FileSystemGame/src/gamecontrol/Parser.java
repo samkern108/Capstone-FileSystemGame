@@ -48,7 +48,7 @@ public class Parser {
 	}
 
 	public boolean askForPassword(String name, String password, String hint) {
-		System.out.print("Enter Password for " + name + ":  ");
+		System.out.print("Enter Password for " + name + " (or type \"hint\"):  ");
 		String passInput = in.nextLine();
 		
 		if(passInput.equals("hint"))
