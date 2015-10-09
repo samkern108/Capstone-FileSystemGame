@@ -21,9 +21,18 @@ public class FileExplorer {
 				if (cDir.parent != null){
 					cDir = cDir.parent;
 				}
+			} else if (s.equals(".")){
+				cDir = root;
 			} else {
 				for (int i = 0; i < cDir.directories.size(); i++){
 					if (s.equals(cDir.directories.get(i).name)){
+						if(cDir.directories.get(i).password != null){
+							boolean password = Parser.self.askForPassword(cDir.directories.get(i).name, 
+									cDir.directories.get(i).password, cDir.directories.get(i).hint);
+							if (!password){
+								return;
+							}
+						}
 						cDir = cDir.directories.get(i);
 						i = 0;
 					}

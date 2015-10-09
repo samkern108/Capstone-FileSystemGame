@@ -41,6 +41,10 @@ public class Parser {
 		case "catf":
 			explorer.cat(inputAr.length == 1 ? null : inputAr[1], true);
 			break;
+		case "end":
+			System.out.print("Session Expired");
+			System.exit(0);
+			break;
 		case "help":
 			explorer.help();
 			break;
@@ -50,6 +54,9 @@ public class Parser {
 	public boolean askForPassword(String name, String password, String hint) {
 		System.out.print("Enter Password for " + name + " (or type \"hint\"):  ");
 		String passInput = in.nextLine();
+		
+		passInput = passInput.toLowerCase();
+		password = password.toLowerCase();
 		
 		if(passInput.equals("hint"))
 		{
