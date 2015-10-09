@@ -1,0 +1,9 @@
+ERIC'S SUPER COOL SHELL CHEAT SHEET
+
+commands list:
+
+pwd               prints the path of the current directory (folder, I think?)
+cat "filename"    a furry mammal.  Also opens a specific file.  Note to self:  don't actually use quotation marks.
+cd "folder name"  opens the folder named "folder name", unless that folder doesn't exist
+ls                prints out a huge list of all of the folders and files in the current directory
+help              I MADE THIS!!  Prints this file!!
