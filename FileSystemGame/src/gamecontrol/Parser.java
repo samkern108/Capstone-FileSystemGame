@@ -16,6 +16,7 @@ public class Parser {
 
 	public void takeUserInput(FileExplorer explorer)
 	{
+		System.out.print(" > ");
 		String input = in.nextLine();
 		String[] inputAr = input.split(" ", 2);
 
@@ -36,7 +37,13 @@ public class Parser {
 			explorer.pfs();
 			break;
 		case "cat":
-			explorer.cat(inputAr.length == 1 ? null : inputAr[1]);
+			explorer.cat(inputAr.length == 1 ? null : inputAr[1], false);
+			break;
+		case "catf":
+			explorer.cat(inputAr.length == 1 ? null : inputAr[1], true);
+			break;
+		case "help":
+			explorer.help();
 			break;
 		}
 	}

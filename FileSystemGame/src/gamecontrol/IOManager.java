@@ -89,6 +89,26 @@ public class IOManager
 		return dir;
 	}
 	
+	public gamecontrol.File getHelpFile()
+	{
+		File file = new File(pathToData + "help.txt");
+		try {
+			fileInput = new Scanner(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		String content = "";
+		
+		while(fileInput.hasNextLine())
+		{
+			content += fileInput.nextLine()+"\n";
+		}
+		
+		return new gamecontrol.File("help.txt",null,null, content);
+	
+	}
+	
 	private gamecontrol.File ObjectToFile(JSONObject obj)
 	{
 		File file = new File(pathToData + (String)obj.get("name"));

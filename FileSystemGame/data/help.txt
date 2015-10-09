@@ -3,9 +3,12 @@ ERIC'S SUPER COOL SHELL CHEAT SHEET
 COMMANDS LIST:
 
 Note to self:  don't actually use quotation marks.
+Note to self:  directory means folder, I think.
 
-pwd               prints the path of the current directory (folder, I think?)
-cat "filename"    a furry mammal.  Also opens a specific file.  
-cd "folder name"  opens the folder named "folder name", unless that folder doesn't exist
-ls                prints out a huge list of all of the folders and files in the current directory
+pwd               Prints the path of the current directory 
+cat "filename"    A furry mammal.  Also opens a specific file.  
+catf "filename"   Opens the file quickly (without the slow-type effect...
+                  it's pretty, but gets annoying when I'm working fast)
+cd "folder name"  Opens the folder named "folder name", unless that folder doesn't exist
+ls                Prints out a huge list of all folders and files in the current directory
 help              I MADE THIS!!  Prints this file!!
