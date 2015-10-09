@@ -21,6 +21,8 @@ public class FileExplorer {
 				if (cDir.parent != null){
 					cDir = cDir.parent;
 				}
+			} else if (s.equals(".")){
+				cDir = root;
 			} else {
 				for (int i = 0; i < cDir.directories.size(); i++){
 					if (s.equals(cDir.directories.get(i).name)){
