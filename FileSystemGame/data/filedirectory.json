@@ -11,28 +11,51 @@
                     "files": []
                 }
             ],
-            "files": []
+            "files": [
+                {
+                    "name": "Dear Reader.txt",
+                    "password": "endgame",
+                    "hint": "The culmination of all of my work.  This is everything."
+                }
+            ]
         },
         {
             "name": "Documents",
-            "dirs": [],
+            "dirs": [
+                {
+                    "name": "Personal",
+                    "dirs": [
+                        {
+                            "name": "Thesis",
+                            "password": "Leanne",
+                            "hint": "Speaking of tumors...",
+                            "dirs": [],
+                            "files": []
+                        }
+                    ],
+                    "files": [
+                        {
+                            "name": "Letter from Mom.txt"
+                        }
+                    ]
+                },
+                {
+                    "name": "Work",
+                    "dirs": [
+                        {
+                            "name": "Archived Emails",
+                            "dirs": [],
+                            "files": []
+                        }
+                    ],
+                    "files": []
+                }
+            ],
             "files": []
         },
         {
             "name": "Downloads",
-            "dirs": [
-            	{
-            		"name": "Testing",
-           			"dirs": [
-           				{
-            				"name": "Testing2",
-           					"dirs": [],
-            				"files": []
-        				}		
-        			],
-            		"files": []
-        		}
-        	],
+            "dirs": [],
             "files": []
         },
         {

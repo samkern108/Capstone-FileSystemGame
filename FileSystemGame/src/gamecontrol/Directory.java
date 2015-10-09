@@ -52,12 +52,12 @@ public class Directory
 		for(Directory d : directories)
 		{
 			ls += d.name;
-			ls += "\t";
+			ls += "      ";
 		}
 		for(File f : files)
 		{
 			ls += f.name;
-			ls += "\t";
+			ls += "      ";
 		}
 		return ls;
 	}

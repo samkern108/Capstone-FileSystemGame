@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Parser {
 	
 	public static Parser self;
-	public enum commands {cd, ls};
 	Scanner in;
 	
 	public Parser()
