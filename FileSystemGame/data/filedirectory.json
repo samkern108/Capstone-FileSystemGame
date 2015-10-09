@@ -16,12 +16,7 @@
         {
             "name": "Documents",
             "dirs": [],
-            "files": [
-                {
-                    "name": "Boring Spreadsheet.xcel",
-                    "content": "I am boring"
-                }
-            ]
+            "files": []
         },
         {
             "name": "Downloads",
@@ -43,24 +38,12 @@
         {
             "name": "Pictures",
             "dirs": [],
-            "files": [
-                {
-                    "name": "Picture.jpg",
-                    "content": "none"
-                }
-            ]
+            "files": []
         }
     ],
     "files": [
         {
-            "name": "README.txt",
-            "content": "Blah blah file content blah blah blah!  :)"
-        },
-        {
-            "name": "Dear User.txt",
-            "content": "Blah blah good job victory hooray!",
-            "password": "AspenHall",
-            "hint": "I am here literally right now."
+            "name": "README.txt"
         }
     ]
 }

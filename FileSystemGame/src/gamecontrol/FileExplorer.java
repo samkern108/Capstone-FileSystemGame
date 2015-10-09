@@ -6,7 +6,7 @@ public class FileExplorer {
 	
 	public FileExplorer()
 	{
-		FileManager fileManager = new FileManager();
+		IOManager fileManager = new IOManager();
 		root = fileManager.populateFileSystem();
 		cDir = root; //current directory
 	}

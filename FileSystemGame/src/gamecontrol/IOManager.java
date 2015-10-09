@@ -10,20 +10,21 @@ import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 
 
-public class FileManager 
+public class IOManager 
 {
-	private String pathToJSONFile = "data/filedirectory.json";
+	private String fileJSON = "filedirectory.json";
+	private String pathToData = "";
 	private JSONParser parser = new JSONParser();
+	private Scanner fileInput = null;
 
 	public Directory populateFileSystem()
 	{
 		File currDir = new File(".");
-		String path = currDir.getAbsolutePath();
-		path = path.substring(0, path.length()-1) + pathToJSONFile;
+		pathToData = currDir.getAbsolutePath();
+		pathToData = pathToData.substring(0, pathToData.length()-1) + "data/";
 
-		File jsonFile = new File(path);
-
-		Scanner fileInput = null;
+		File jsonFile = new File(pathToData + fileJSON);
+		
 		try 
 		{
 			fileInput = new Scanner(jsonFile);
@@ -90,6 +91,20 @@ public class FileManager
 	
 	private gamecontrol.File ObjectToFile(JSONObject obj)
 	{
-		return new gamecontrol.File((String)obj.get("name"), (String)obj.get("password"), (String)obj.get("hint"), (String)obj.get("content"));
+		File file = new File(pathToData + (String)obj.get("name"));
+		try {
+			fileInput = new Scanner(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		String content = "";
+		
+		while(fileInput.hasNextLine())
+		{
+			content += fileInput.nextLine()+"\n";
+		}
+		
+		return new gamecontrol.File((String)obj.get("name"), (String)obj.get("password"), (String)obj.get("hint"), content);
 	}
 }
