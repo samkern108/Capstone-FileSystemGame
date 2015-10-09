@@ -6,13 +6,17 @@ public class Directory
 {
 	String name;
 	String alias;
+	String password;
+	String hint;
 	ArrayList<Directory> directories;
 	ArrayList<File> files;
 	Directory parent;
 
-	public Directory(String name, String alias, Directory p)
+	public Directory(String name, String password, String hint, String alias, Directory p)
 	{
 		this.name = name;
+		this.password = password;
+		this.hint = hint;
 		if(alias != null) {
 			this.alias = alias;
 		}

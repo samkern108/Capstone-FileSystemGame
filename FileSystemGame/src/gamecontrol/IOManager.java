@@ -83,7 +83,7 @@ public class IOManager
 	
 	private Directory ObjectToDirectory(JSONObject obj, Directory parent)
 	{
-		Directory dir = new Directory((String)obj.get("name"), (String)obj.get("alias"), parent);
+		Directory dir = new Directory((String)obj.get("name"), (String)obj.get("password"), (String)obj.get("hint"), (String)obj.get("alias"), parent);
 		dir.AddDirectories(JSONFetchDirectories(obj, dir));
 		dir.AddFiles(JSONFetchFiles(obj));
 		return dir;
